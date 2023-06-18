@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-configs
+  namespace: kubernetes-cluster-nitingoyal
+  labels: 
+    name: db-configs
+data:
+  MYSQL_USER: "nitin"
+  MYSQL_HOSTNAME: "mysql-headless-service"
+  MYSQL_DATABASE: "CRUD"
+  DB_PORT: "3306"
